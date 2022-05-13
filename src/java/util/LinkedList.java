@@ -203,7 +203,7 @@ public class LinkedList<E>
         f.next = null; // help GC
         //头指针 指向 节点的下一个节点
         first = next;
-        //下一个节点为null 也就是 该节点是头结点
+        //下一个节点为null 也就是该节点是头结点
         if (next == null)
             //尾指针为null
             last = null;

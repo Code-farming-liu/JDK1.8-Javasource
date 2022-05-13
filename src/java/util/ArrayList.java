@@ -280,7 +280,7 @@ public class ArrayList<E> extends AbstractList<E>
 
     /**
      * 数组缓冲区最大存储容量
-     * - 一些 VM 会在一个数组中存储某些数据--->为什么要减去 8 的原因
+     * - 一些 JVM 会在一个数组中存储某些数据--->为什么要减去 8 的原因
      * - 尝试分配这个最大存储容量，可能会导致 OutOfMemoryError(当该值 > VM 的限制时)
      */
     private static final int MAX_ARRAY_SIZE = Integer.MAX_VALUE - 8;

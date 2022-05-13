@@ -970,7 +970,7 @@ public class HashMap<K, V> extends AbstractMap<K, V>
                     else if (e instanceof TreeNode)
                         //把此树进行转移到newCap中
                         ((TreeNode<K, V>) e).split(this, newTab, j, oldCap);
-                        // 若是链表，进行链表的 rehash　操作
+                    // 若是链表，进行链表的 rehash　操作
                     /**此处表示为链表结构，同样把链表转移到newCap中，
                      * 就是把链表遍历后，把值转过去，在置位null**/
                     else { // preserve order
@@ -1111,7 +1111,7 @@ public class HashMap<K, V> extends AbstractMap<K, V>
         if ((tab = table) != null && (n = tab.length) > 0 &&
                 // 1. 定位桶位置
                 (p = tab[index = (n - 1) & hash]) != null) {
-            //nodee 存储要删除的节点，e 临时变量，k 当前节点的key，v 当前节点的value
+            //node 存储要删除的节点，e 临时变量，k 当前节点的key，v 当前节点的value
             Node<K, V> node = null, e;
             K k;
             V v;

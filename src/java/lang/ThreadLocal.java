@@ -220,7 +220,6 @@ public class ThreadLocal<T> {
      代码很简单，获取当前线程，并获取当前线程的ThreadLocalMap实例（从getMap(Thread t)中很容易看出来）。
      如果获取到的map实例不为空，调用map.set()方法，
      否则调用构造函数 ThreadLocal.ThreadLocalMap(this, firstValue)实例化map。
-
      **/
     public void set(T value) {
         Thread t = Thread.currentThread();
