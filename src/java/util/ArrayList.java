@@ -303,7 +303,7 @@ public class ArrayList<E> extends AbstractList<E>
         // 若 newCapacity 大于最大存储容量，则进行大容量分配
         if (newCapacity - MAX_ARRAY_SIZE > 0)
             newCapacity = hugeCapacity(minCapacity);
-        // minCapacity is usually close to size, so this is a win:
+        // minCapacity 通常接近 size，所以这是一个胜利：
         elementData = Arrays.copyOf(elementData, newCapacity);
     }
 
